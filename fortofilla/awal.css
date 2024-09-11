@@ -1,0 +1,87 @@
+/* Menggunakan font Poppins dari Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #1365e0, #63e2fceb);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+#main-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+#main-icon:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    width: 400px;
+}
+
+.address,
+.education {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.achievements {
+    margin: 30px 0;
+}
+
+.achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements ul li {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.view-works {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-works:hover {
+    background-color: #007BFF;
+    transform: translateY(-3px);
+}

@@ -1,0 +1,46 @@
+.carousel-section {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: #fafafa;
+    padding: 40px 0;
+}
+
+.carousel-container {
+    display: flex;
+    width: 300%;
+    animation: slide 30s infinite;
+    /* Memperpanjang durasi animasi menjadi 30 detik */
+}
+
+.carousel-container img {
+    width: 33.33%;
+    /* Menampilkan 3 gambar dalam satu baris */
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
